@@ -1,0 +1,57 @@
+<textarea id="result" readonly=""></textarea>
+
+<table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+  <tbody>
+    <tr>
+      <td valign="top" style="padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 7px; border-top: 0; border-bottom: 0: border-left: 0; border-right: solid 3px #37b19b">
+        <img style="width:100%" id="logo-image-url" src="https://www.addition.dk/media/1092/addition_logo_green-1x.png?anchor=center&amp;mode=crop&amp;width=200" name="logo-image-url" />
+      </td>
+      <td style="padding-top: 0; padding-bottom: 0; padding-left: 12px; padding-right: 0;">
+        <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <span style="padding-bottom: 5px; color: #37b19b; font-size: 16px; font-family: Arial, Helvetica, sans-serif;" id="name" ng-model="signatureData.name" contenteditable onfocus="document.execCommand('selectAll',false,null)"></span><br/>
+                <strong style="padding-bottom: 5px; color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;" id="title" ng-model="signatureData.title" contenteditable onfocus="document.execCommand('selectAll',false,null)"></strong></td>
+            </tr>
+            <tr>
+              <td colspan="2" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;" id="phone" ng-model="signatureData.phone" contenteditable onfocus="document.execCommand('selectAll',false,null)"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><span style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;" id="email" ng-model="signatureData.email" contenteditable onfocus="document.execCommand('selectAll',false,null)"></span></td>
+            </tr>
+            <tr>
+              <td width="20" valign="top" style="vertical-align: top; width: 20px; color: #37b19b; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><img src="https://www.addition.dk/media/1094/skype-logo.png" alt="skype" /></td>
+              <td valign="top" style="vertical-align: top; color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;" id="address">
+                <span style="color: #333333; text-decoration: none; font-weight: normal; font-size: 14px;" id="skype" ng-model="signatureData.skype" contenteditable onfocus="document.execCommand('selectAll',false,null)"></span>
+              </td>
+            </tr>
+            <tr>
+              <td width="20" valign="top" style="vertical-align: top; width: 20px; color: #37b19b; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><img src="https://www.addition.dk/media/1093/linkedin-logo.png" alt="linkedin" /></td>
+              <td valign="top" style="vertical-align: top; color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;" id="address">
+                <span style="color: #333333; text-decoration: none; font-weight: normal; font-size: 14px;" id="linkedin" ng-model="signatureData.linkedin" contenteditable onfocus="document.execCommand('selectAll',false,null)"></a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="2" valign="top" style="vertical-align: top; color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;" id="address">Sølvgade 10, 1. tv<br />1307 København K<br/>+45 3369 0402<br/><a style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;" href="https://www.addition.dk">www.addition.dk</a></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+<pre>
+{{signatureData | json}}</pre>
